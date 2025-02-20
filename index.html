@@ -7,6 +7,34 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <div class="container">
+        <header>
+          <h1>Dynamic Color Picker</h1>
+          <p>Select a color and watch the background change!</p>
+        </header>
+        <main>
+            <div class="color-display" id="colorDisplay">
+              <span id="colorCode">#ffffff</span>
+            </div>
+            <div class="controls">
+                <div class="preset-colors">
+                  <h3>Preset Colors</h3>
+                  <div class="colors">
+                    <!-- Predefined colors -->
+                    <button class="color-btn" data-color="#3498db" style="background-color: #3498db;"></button>
+                    <button class="color-btn" data-color="#e74c3c" style="background-color: #e74c3c;"></button>
+                    <button class="color-btn" data-color="#2ecc71" style="background-color: #2ecc71;"></button>
+                    <button class="color-btn" data-color="#f1c40f" style="background-color: #f1c40f;"></button>
+                    <button class="color-btn" data-color="#9b59b6" style="background-color: #9b59b6;"></button>
+                    <button class="color-btn" data-color="#e67e22" style="background-color: #e67e22;"></button>
+                    <button class="color-btn" data-color="#1abc9c" style="background-color: #1abc9c;"></button>
+                    <button class="color-btn" data-color="#34495e" style="background-color: #34495e;"></button>
+                  </div>
+                </div>
+                <div class="custom-color">
+                  <h3>Custom Color</h3>
+                  <input type="color" id="colorPicker" value="#ffffff" />
+                </div>
     
 </body>
 </html>
