@@ -36,4 +36,29 @@ randomBtn.addEventListener('click', () => {
     const randomColor = getRandomColor();
     updateColor(randomColor);
   });
-      
+
+// Copy hex code to clipboard
+copyBtn.addEventListener('click', () => {
+    navigator.clipboard.writeText(colorCode.textContent)
+      .then(() => {
+        copyBtn.textContent = "Copied!";
+        setTimeout(() => copyBtn.textContent = "Copy Hex", 1500);
+      })
+      .catch(err => console.error('Failed to copy!', err));
+  });
+
+// Preset colors buttons
+presetButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const selectedColor = btn.getAttribute('data-color');
+      updateColor(selectedColor);
+    });
+  });
+
+// Optionally, update color when custom color input changes
+colorPicker.addEventListener('input', () => {
+    updateColor(colorPicker.value);
+  });
+  
+  // Initialize with default color
+  updateColor('#ffffff');    
