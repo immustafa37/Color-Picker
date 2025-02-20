@@ -30,3 +30,39 @@
     margin-bottom: 10px;
   }
   
+  header p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  /* Main content */
+  main {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+/* Color display box */
+.color-display {
+    width: 100%;
+    padding: 40px 0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border: 2px dashed #ddd;
+    transition: background-color 0.5s ease;
+  }
+  
+.color-display span {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  /* Controls Section */
+  .controls {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+    
